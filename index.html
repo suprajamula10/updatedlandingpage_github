@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Portfolio</title>
+    <style>
+        /* CSS code */
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+        }
+        .main-section {
+            display: flex;
+            justify-content: space-around;
+        }
+        .card {
+            border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    background: linear-gradient(270deg, #d53369, #daae51);
+    background-size: 200% 200%;
+    animation: Gradient 2s ease infinite;
+    color: #ffffff; /* Change this to a lighter color for dark backgrounds */
+        }
+        
+        @keyframes Gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+main {
+    flex: 1 0 auto;
+}
+footer {
+    flex-shrink: 0;
+}
+    </style>
+</head>
+<body>
+    <div class="loader"></div>
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact Me</a>
+    </nav>
+    <main class="main-section">
+        <div>
+            <img src="doodle.png" alt="Doodle of a person">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <button>Contact Me</button>
+        </div>
+        <div>
+            <div class="card">
+                <h3>Education</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <button>Show More</button>
+            </div>
+            <div class="card">
+                <h3>Experience</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <button>Show More</button>
+            </div>
+            <div class="card">
+                <h3>Projects</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <button>Show More</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2022 Portfolio</p>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact Me</a>
+        </nav>
+    </footer>
+</body>
+</html>
